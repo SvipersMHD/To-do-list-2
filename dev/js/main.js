@@ -292,7 +292,7 @@ function rajoutTask(){
                 }
             })
 
-            var tl = gsap.timeline({delay: 1});
-            tl.from(".input__wrapper", {y: -200, duration: 0.5}, 1);
-            tl.from(".hide", {y: -400, duration: 0.5}, 1);
-            tl.from(".ask__wrapper", {y: 100, duration: 0.5});
+            // var tl = gsap.timeline({delay: 1});
+            gsap.from(".input__wrapper", {y: "-100vh", duration: 0.8, ease: "power3.out"});
+            gsap.from(".hide", {y: "-100vh", duration: 0.8, delay: 0.2, ease: "power3.out"});
+            gsap.from(".ask__wrapper", {y: "-100vh", duration: 0.8, delay: 0.5, ease: "power3.out"});
